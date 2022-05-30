@@ -1,0 +1,41 @@
+<div class="d-flex" id="wrapper">
+    <button class="btn btn-primary" (click)="clickEvent()" [ngClass]="status ? 'hide' : 'show'">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <nav>
+            <input type="checkbox" id="bt-menu">
+            <label for="bt-menu">&#9776;</label>
+            <ul id="menu">
+                <li routerLink="/laudos">
+                    <span class="icon">
+                        <img src="assets/images/ic_menu_laudos.svg" class="svg" routerLinkActive="active">
+                    </span>
+                    <span>Laudos</span>
+                </li>
+
+                <li routerLink="/usuarios-adm">
+                    <span class="icon">
+                        <img src="assets/images/ic_menu_usuarios.svg" class="svg" routerLinkActive="active">
+                    </span>
+                    <span>Cadastro Inicial</span>
+                </li>
+
+
+                <li routerLink="/login">
+                    <span class="icon">
+                        <img src="assets/images/ic_menu_sair.svg" class="svg">
+                    </span>
+                    <span>Sair</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- /#sidebar-wrapper -->
+    <div class="container-fluid">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<!-- /#wrapper -->

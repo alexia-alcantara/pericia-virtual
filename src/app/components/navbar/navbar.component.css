@@ -1,0 +1,135 @@
+.bg-light {
+    background: #18181C !important;
+}
+
+.logo-topo {
+    width: 3vw;
+}
+
+
+.sidebar-heading {
+    padding: .5rem 0.8rem;
+    font-size: .9rem;
+}
+
+.drop-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -25px;
+    margin-top: 0.1rem;
+}
+
+#dropdownMenu2 {
+    font: normal normal normal 15px/10px Lato;
+    color: #293241;
+}
+
+.btn-primary {
+    display: none;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    padding-top: 0.4rem;
+    box-shadow: 0 8px 5px -10px;
+}
+
+
+:host ::ng-deep .p-avatar img {
+    width: 3.3rem;
+}
+
+:host ::ng-deep .p-megamenu {
+    border: none;
+    background: inherit;
+}
+
+:host ::ng-deep .p-megamenu .p-megamenu-submenu {
+    width: 11.1rem;
+}
+
+:host ::ng-deep .p-megamenu .p-megamenu-submenu-header {
+    display: none;
+}
+
+@media(max-width: 600px) {
+    .navbar {
+        flex-wrap: nowrap;
+        padding-bottom: 2.5rem;
+    }
+
+    .navbar-expand-lg .navbar-expand-lg {
+        justify-content: left;
+    }
+
+    .collapse:not(.show) {
+        display: inherit;
+    }
+
+    .logo-topo {
+        width: 60%;
+    }
+
+    .btn-primary {
+        display: none;
+    }
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-sm {
+        flex-wrap: nowrap;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    #page-content-wrapper {
+        width: 100%;
+        min-width: auto;
+        overflow: hidden;
+    }
+
+    :host ::ng-deep .p-megamenu-horizontal .p-megamenu-root-list {
+        flex-wrap: inherit;
+    }
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .show {
+        margin-left: 0 !important;
+    }
+
+    .hide {
+        margin-left: -15rem !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .show {
+        margin-left: -15rem !important;
+    }
+
+    .hide {
+        margin-left: -0 !important;
+    }
+}

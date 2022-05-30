@@ -1,0 +1,46 @@
+:host ::ng-deep .box-login {
+    width: 100%;
+    box-shadow: none;
+}
+
+.logo-pericia {
+    width: 20rem;
+}
+
+:host ::ng-deep .p-card .p-card-subtitle {
+    font: normal normal bold 16px/27px Poppins;
+    color: #38515F;
+    text-align: center;
+}
+
+:host ::ng-deep .p-card .p-card-content {
+    padding-bottom: 0;
+}
+
+.btn-acess {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+:host ::ng-deep .p-button-acess,
+.p-button-login {
+    width: 100%;
+    border-radius: 10px;
+}
+
+:host ::ng-deep .p-button-label {
+    font: normal normal normal 17px/20px Lato;
+}
+
+.form-floating>.form-control {
+    background: #F6F7F7;
+}
+
+
+p {
+    font: normal normal bold 15px/45px Lato;
+    text-align: center;
+    color: #ED1C27;
+}

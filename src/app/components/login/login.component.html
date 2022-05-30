@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="md:col-5 lg:col-5 mx-auto pt-8 row justify-content-center">
+        <p-card subheader="Seguradoras" styleClass="box-login mt-3">
+            <ng-template pTemplate="header">
+                <img alt="logo-pericia" src="assets/images/logo_login.png" class="logo-pericia">
+            </ng-template>
+
+            <form [formGroup]="loginForm">
+                <div class="row">
+                    <div class="field col-xs-12 col-lg-12 mb-2">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="inputtext" formControlName="email"
+                                placeholder="Email">
+                            <label for="floatingInput inputtext"> Email</label>
+                        </div>
+                    </div>
+
+                    <div class="field col-xs-12 col-lg-12 mb-2">
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="inputPassword" formControlName="password"
+                                placeholder="Senha">
+                            <label for="floatingInput inputPassword">Senha</label>
+
+                            <span class="icon-password" (click)="showHidePassword()">
+                                <i [ngClass]="showpassword ? 'pi pi-eye' : 'pi pi-eye-slash' "
+                                    class="pi pi-eye-slash"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="btn-acess">
+                <button pButton pRipple type="submit" label="Primeiro Acesso"
+                    class="p-button-outlined p-button-danger p-button-acess" routerLink="/first-access"></button>
+                <button pButton pRipple type="submit" label="Entrar" class="p-button-danger p-button-login"
+                    routerLink="/laudos"></button>
+            </div>
+
+            <p>Recuperar senha</p>
+        </p-card>
+    </div>
+</div>

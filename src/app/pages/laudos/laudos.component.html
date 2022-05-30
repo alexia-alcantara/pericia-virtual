@@ -1,0 +1,93 @@
+<p-card>
+    <p-panel header="Laudos">
+        <ng-template pTemplate="icons">
+            <!-- <p-selectButton [options]="stateOptions" [(ngModel)]="value1" optionLabel="label" optionValue="value">
+            </p-selectButton> -->
+            <button (click)="div1Function()" pButton pRipple type="button" label="Avaliar"
+                class="p-button-raised p-button-avaliar"></button>
+
+            <button (click)="div2Function()" pButton pRipple type="button" label="Concluído"
+                class="p-button-outlined p-button-concluido"></button>
+
+        </ng-template>
+
+    </p-panel>
+
+    <div class="campo-pesquisa mt-4 mb-3">
+        <div class="md:col-10">
+            <span class="p-input-icon-left">
+                <i class="pi pi-search"></i>
+                <input type="text" pInputText placeholder="Pesquisar por nome, CPF ou placa do veículo"
+                    [(ngModel)]="value3" />
+            </span>
+        </div>
+
+        <div class="md:col-2">
+            <button pButton pRipple type="button" label="Exportar Relatório" icon="pi pi-download"
+                class="p-button-export"></button>
+
+        </div>
+    </div>
+
+
+    <div *ngIf="div1">
+        <p-table [value]="listaLaudos" [paginator]="true" [rows]="10" responsiveLayout="scroll">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th *ngFor="let col of colunas">
+                        {{col.header}}
+                    </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-listaLaudos>
+                <tr>
+                    <td>{{listaLaudos.date}}</td>
+                    <td>{{listaLaudos.protocolNumber}}</td>
+                    <td>{{listaLaudos.diverName}}</td>
+                    <td>{{listaLaudos.board}}</td>
+                    <td>{{listaLaudos.category}}</td>
+                    <td>{{listaLaudos.deliveryDate}}</td>
+                    <td>{{listaLaudos.answerDate}}</td>
+                    <td>
+                        <button pButton pRipple type="button" label="Ver" class="p-button-show"
+                            routerLink="./detalhe-laudo"></button>
+
+                    </td>
+
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+
+    <!--Tabela de Concluídos -->
+    <div *ngIf="div2">
+        <p-table [value]="laudosConcluidos" [paginator]="true" [rows]="10" responsiveLayout="scroll">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th *ngFor="let col of colunas2">
+                        {{col.header}}
+                    </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-laudosConcluidos>
+                <tr>
+                    <td>{{laudosConcluidos.date}}</td>
+                    <td>{{laudosConcluidos.protocolNumber}}</td>
+                    <td>{{laudosConcluidos.diverName}}</td>
+                    <td>{{laudosConcluidos.board}}</td>
+                    <td>{{laudosConcluidos.category}}</td>
+                    <td>{{laudosConcluidos.deliveryDate}}</td>
+                    <td>{{laudosConcluidos.answerDate}}</td>
+                    <td>{{laudosConcluidos.status}}</td>
+
+                    <td>
+                        <button pButton pRipple type="button" label="Ver" class="p-button-show"
+                            routerLink="./detalhe-laudo"></button>
+
+                    </td>
+
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</p-card>

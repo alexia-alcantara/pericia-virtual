@@ -1,0 +1,124 @@
+#sidebar-wrapper {
+    display: grid;
+    grid-template-rows: 60px auto;
+    grid-template-columns: 60px auto;
+    z-index: 1080;
+    cursor: pointer;
+    width: 70px;
+    height: auto;
+}
+
+#wrapper {
+    min-height: 100vh;
+    background: #EEF1F3;
+}
+
+.container-fluid {
+    max-width: 93%;
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.btn-primary {
+    display: none;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+    padding: 1rem 0;
+    list-style: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0;
+    overflow: hidden;
+    width: 70px;
+    height: 100vh;
+    will-change: width;
+    background-color: #18181C;
+    transition: width ease-in 0.5s;
+}
+
+nav ul:hover {
+    width: 250px;
+}
+
+nav ul li {
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li span.icon {
+    height: 100%;
+    width: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li span.icon+span {
+    color: #fff;
+    font: normal normal normal 14px/21px Segoe UI Regular;
+    white-space: nowrap;
+    position: absolute;
+    left: 70px;
+}
+
+.btn-danger {
+    position: relative;
+    left: 5%;
+    margin: 1rem 0.1rem;
+}
+
+.table {
+    margin: 3rem;
+}
+
+label[for="bt-menu"] {
+    font-size: 40px;
+    position: absolute;
+    left: 10px;
+    top: 60px;
+    display: none;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+#bt-menu {
+    display: none;
+}
+
+#bt-menu:checked~#menuul {
+    width: 250px;
+}
+
+.svg {
+    width: 25px;
+}
+
+.svg.active {
+    cursor: pointer;
+    filter: invert(4%) sepia(18%) saturate(980%) hue-rotate(16deg) brightness(98%) contrast(88%);
+}
+
+@media(max-width: 600px) {
+    nav ul {
+        width: 100%;
+        margin-top: 3.9rem;
+        height: 66rem;
+    }
+
+    label[for="bt-menu"] {
+        display: none;
+    }
+}

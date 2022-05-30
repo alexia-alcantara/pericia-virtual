@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="md:col-5 lg:col-5 mx-auto pt-8 row justify-content-center">
+        <p-card subheader="Seguradoras" styleClass="box-login mt-3">
+            <ng-template pTemplate="header">
+                <img alt="logo-pericia" src="assets/images/logo_login.svg" class="logo-pericia">
+            </ng-template>
+
+            <div class="row">
+                <div class="field col-xs-12 col-lg-12 mb-2">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="inputtext" formControlName="email"
+                            placeholder="Email">
+                        <label for="floatingInput inputtext"> Email</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="btn-acess">
+                <button pButton pRipple type="button" label="Voltar"
+                    class="p-button-outlined p-button-danger p-button-acess" routerLink="/login"></button>
+                <button pButton pRipple type="button" label="Entrar" class="p-button-danger p-button-login"></button>
+            </div>
+
+            <p routerLink="/forgot-password">Esqueceu sua senha?</p>
+        </p-card>
+    </div>
+</div>
