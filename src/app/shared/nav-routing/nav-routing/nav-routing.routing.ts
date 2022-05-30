@@ -1,3 +1,4 @@
+import { LaudoRejeitadoComponent } from './../../../pages/laudos/laudo-rejeitado/laudo-rejeitado.component';
 import { DetalheLaudoComponent } from './../../../pages/laudos/detalhe-laudo/detalhe-laudo.component';
 import { SidenavComponent } from './../../../components/sidenav/sidenav.component';
 import { NavRoutingComponent } from './nav-routing.component';
@@ -14,7 +15,8 @@ export const NavigationRouting: Routes = [
             {
                 path: 'laudos', component: SidenavComponent,
                 children: [
-                    { path: 'detalhe-laudo', component: DetalheLaudoComponent }
+                    { path: 'detalhe-laudo', component: DetalheLaudoComponent },
+                    { path: 'laudo-rejeitado', component: LaudoRejeitadoComponent }
                 ]
             }
 

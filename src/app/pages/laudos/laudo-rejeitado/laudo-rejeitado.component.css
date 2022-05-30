@@ -1,0 +1,31 @@
+:host ::ng-deep .p-panel .p-panel-header {
+    text-transform: uppercase;
+}
+
+span {
+    font: normal normal bold 15px/27px Segoe UI;
+    text-transform: initial;
+
+}
+
+.elementos {
+    border: 1px solid;
+    height: 76vh;
+}
+
+h5 {
+    font: normal normal normal 15px/24px Segoe UI Regular;
+    color: #69707A;
+}
+
+:host ::ng-deep .p-accordion .p-accordion-content {
+    padding: 1rem 0.3rem;
+}
+
+:host ::ng-deep .p-inputtext {
+    width: 100%;
+}
+
+:host ::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link {
+    text-transform: uppercase;
+}

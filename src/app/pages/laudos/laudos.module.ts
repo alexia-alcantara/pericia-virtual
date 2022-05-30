@@ -18,12 +18,14 @@ import { RadioButtonModule } from 'primeng/radiobutton';
 import { PanelModule } from 'primeng/panel';
 import { TableModule } from 'primeng/table';
 import { PaginatorModule } from 'primeng/paginator';
+import { LaudoRejeitadoComponent } from './laudo-rejeitado/laudo-rejeitado.component';
 
 
 @NgModule({
   declarations: [
     LaudosComponent,
-    DetalheLaudoComponent
+    DetalheLaudoComponent,
+    LaudoRejeitadoComponent
   ],
   imports: [
     AccordionModule,

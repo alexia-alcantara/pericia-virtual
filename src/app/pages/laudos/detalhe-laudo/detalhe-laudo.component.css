@@ -1,7 +1,13 @@
+:host ::ng-deep .p-panel .p-panel-header {
+    text-transform: uppercase;
+}
+
+
 span {
     font: normal normal bold 15px/27px Segoe UI;
     color: #707070;
     display: flex;
+    text-transform: initial;
 }
 
 h5 {
@@ -72,4 +78,8 @@ h5 {
 
 :host ::ng-deep .p-button-send .p-button-label {
     font: normal normal normal 15px/36px Lato;
+}
+
+:host ::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link {
+    text-transform: uppercase;
 }
