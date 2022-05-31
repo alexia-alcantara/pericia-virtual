@@ -1,0 +1,81 @@
+<p-card>
+    <p-panel header="Usuários Administrativos">
+        <ng-template pTemplate="icons">
+            <button pButton pRipple type="button" label="Novo Usuário" (click)="showModalDialog()" icon="pi pi-plus"
+                class="add-keys"></button>
+        </ng-template>
+
+    </p-panel>
+
+
+    <!-- Table -->
+    <p-table [value]="usersAdm" [paginator]="true" [rows]="10" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+            <tr>
+                <th *ngFor="let col of colunas">
+                    {{col.header}}
+                </th>
+            </tr>
+
+        </ng-template>
+        <ng-template pTemplate="body" let-usersAdm>
+            <tr>
+                <td>{{usersAdm.name}}</td>
+                <td>{{usersAdm.email}}</td>
+                <td style="text-align: end;">
+                    <button pButton pRipple type="button" icon="pi pi-trash"
+                        class="p-button-rounded p-button-danger"></button>
+                </td>
+
+
+            </tr>
+        </ng-template>
+    </p-table>
+
+    <!-- Modal novo usuário -->
+    <p-dialog styleClass="modalUsuário" header="Novo Usuário" [(visible)]="displayModal" [modal]="true"
+        [style]="{'width': '44vw', 'height': '35vw'}" [draggable]="false" [resizable]="false">
+        <div class="grid">
+            <div class=" md:col-12 lg:col-12">
+                <div class="field">
+                    <div class="grid">
+                        <div class="md:col-12 lg:col-12">
+                            <label for="nomeUser">Nome do usuário</label>
+                            <input id="nomeUser" type="text" pInputText placeholder="Digite">
+                        </div>
+
+                        <div class="md:col-12 lg:col-12">
+                            <label for="email">Email</label>
+                            <input id="email" type="text" pInputText placeholder="Digite">
+                        </div>
+
+                        <div class="md:col-12 lg:col-12">
+                            <label for="password">Senha</label>
+                            <input id="password" type="password" pInputText placeholder="Digite">
+                            <span class="icon-password" (click)="showHidePassword()">
+                                <i [ngClass]="showpassword ? 'pi pi-eye' : 'pi pi-eye-slash' "
+                                    class="pi pi-eye-slash"></i>
+                            </span>
+                        </div>
+
+                        <div class="md:col-12 lg:col-12">
+                            <label for="passwordConfirm">Confirmar Senha</label>
+                            <input id="passwordConfirm" type="password" pInputText placeholder="Digite">
+
+                            <span class="icon-passwordConfirm" (click)="showHidePassword2()">
+                                <i [ngClass]="showpasswordConfirm ? 'pi pi-eye' : 'pi pi-eye-slash' "
+                                    class="pi pi-eye-slash"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ng-template pTemplate="footer">
+            <button pButton pRipple type="button" label="Cancelar" icon="pi pi-times" (click)="displayModal=false"
+                class="p-button-cancel"></button>
+            <button pButton pRipple type="button" label="Confirmar" icon="pi pi-check" (click)="displayModal=false"
+                class="p-button-confirm"></button>
+        </ng-template>
+    </p-dialog>
+</p-card>

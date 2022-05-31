@@ -126,3 +126,8 @@ body {
     font: normal normal bold 19px/30px Segoe UI;
     color: #69707A !important;
 }
+
+.p-dialog .p-dialog-header .p-dialog-title {
+    font: normal normal 600 23px/40px Segoe UI;
+    color: #69707A;
+}

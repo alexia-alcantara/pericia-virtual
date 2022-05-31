@@ -8,11 +8,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
-
-
-// PrimeNG
-import { ButtonModule } from 'primeng/button';
-import { CardModule } from 'primeng/card';
 import { FirstAccessComponent } from './components/first-access/first-access.component';
 import { NavRoutingComponent } from './shared/nav-routing/nav-routing/nav-routing.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -20,6 +15,17 @@ import { LaudosModule } from './pages/laudos/laudos.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { UsuariosAdmComponent } from './pages/usuarios-adm/usuarios-adm.component';
+
+
+// PrimeNG
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+import { DialogModule } from 'primeng/dialog';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { TableModule } from 'primeng/table';
+import { PanelModule } from 'primeng/panel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +36,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     SidebarComponent,
     SidenavComponent,
     NavbarComponent,
+    UsuariosAdmComponent,
 
   ],
   imports: [
@@ -38,11 +45,16 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     BrowserModule,
     BrowserAnimationsModule,
     CardModule,
+    DialogModule,
+    InputTextModule,
+    InputNumberModule,
     NavRoutingModule,
     LaudosModule,
     FormsModule,
+    PanelModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
