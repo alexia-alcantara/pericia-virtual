@@ -3,6 +3,20 @@
     padding: 0.3rem 1.3rem;
 }
 
+/* .active {
+    background: red !important;
+    color: #ffffff !important;
+} */
+
+.active {
+    background: #2196F3 !important;
+    color: #ffffff !important;
+    width: 120px;
+    height: 42px;
+    padding: 0 2px 0 20px;
+    border-radius: 6px 0px 0px 8px;
+}
+
 :host ::ng-deep .p-panel .p-panel-icons-end {
     margin-left: 0;
 }

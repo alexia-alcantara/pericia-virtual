@@ -3,11 +3,11 @@
         <ng-template pTemplate="icons">
             <!-- <p-selectButton [options]="stateOptions" [(ngModel)]="value1" optionLabel="label" optionValue="value">
             </p-selectButton> -->
-            <button (click)="div1Function()" pButton pRipple type="button" label="Avaliar"
-                class="p-button-raised p-button-avaliar"></button>
+            <button (click)="div1Function()" [ngClass]="{'active': div==='div1'}" pButton pRipple type="button"
+                label="Avaliar" class="p-button-raised p-button-avaliar"></button>
 
-            <button (click)="div2Function()" pButton pRipple type="button" label="Concluído"
-                class="p-button-outlined p-button-concluido"></button>
+            <button (click)="div2Function()" [ngClass]="{'active': div==='div2'}" pButton pRipple type="button"
+                label="Concluído" class="p-button-outlined p-button-concluido"></button>
 
         </ng-template>
 

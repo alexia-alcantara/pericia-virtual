@@ -12,9 +12,9 @@ export class LaudosComponent implements OnInit {
   value1: string = "off";
   value3: string;
 
-
-  div1: boolean = true;
-  div2: boolean = true;
+  div: any = 'div1'
+  div1: any;
+  div2: any;
 
   listaLaudos: AvaliarLaudo[];
   colunas: any[];
@@ -22,6 +22,14 @@ export class LaudosComponent implements OnInit {
   laudosConcluidos: LaudoConcluido[];
   colunas2: any[];
 
+
+  onClick(check: number) {
+    if (check == 0) {
+      this.div = 'div1'
+    } else if (check == 1) {
+      this.div = 'div2'
+    }
+  }
 
   div1Function() {
     this.div1 = true;
