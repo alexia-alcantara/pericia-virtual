@@ -1,10 +1,15 @@
 :host ::ng-deep .box-login {
     width: 100%;
     box-shadow: none;
+    border: none;
 }
 
 .logo-pericia {
     width: 20rem;
+}
+
+:host ::ng-deep .p-card-header {
+    text-align: center;
 }
 
 :host ::ng-deep .p-card .p-card-subtitle {

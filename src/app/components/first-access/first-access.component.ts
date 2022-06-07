@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-first-access',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first-access.component.css']
 })
 export class FirstAccessComponent implements OnInit {
-
-  constructor() { }
+  loginForm: FormGroup;
+  constructor(private _fb: FormBuilder) { }
 
   ngOnInit(): void {
+    this.loginForm = this._fb.group({
+      password: ['test', [Validators.required, Validators.minLength(3)]],
+      email: ['test', [Validators.required, Validators.email]]
+    });
   }
 
 }
