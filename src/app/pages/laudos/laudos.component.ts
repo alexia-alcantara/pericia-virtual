@@ -58,7 +58,7 @@ export class LaudosComponent implements OnInit {
       {
         date: "dd/mm/aaaa",
         protocolNumber: "000000",
-        diverName: "Nome",
+        driverName: "Nome",
         board: "Placa",
         category: "Seguradora",
         deliveryDate: "dd/mm/aaaa",
@@ -111,7 +111,7 @@ export class LaudosComponent implements OnInit {
       {
         date: "dd/mm/aaaa",
         protocolNumber: "000000",
-        diverName: "Nome",
+        driverName: "Nome",
         board: "Placa",
         category: "Seguradora",
         deliveryDate: "dd/mm/aaaa",

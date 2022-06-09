@@ -1,7 +1,7 @@
 export interface AvaliarLaudo {
     date?: string;
     protocolNumber?: string;
-    diverName?: string;
+    driverName?: string;
     board?: string;
     category?: string;
     deliveryDate?: string;
