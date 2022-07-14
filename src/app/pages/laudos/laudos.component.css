@@ -85,3 +85,7 @@
 :host ::ng-deep .p-button-show .p-button-label {
     font: normal normal bold 15px/39px Segoe UI;
 }
+
+:host ::ng-deep .p-datatable .p-datatable-tbody>tr>td.statusFinished {
+    color: #409922;
+}

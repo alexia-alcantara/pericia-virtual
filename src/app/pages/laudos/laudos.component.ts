@@ -48,6 +48,46 @@ export class LaudosComponent implements OnInit {
         answerDate: "dd/mm/aaaa",
         show: ""
       },
+      {
+        date: "dd/mm/aaaa",
+        protocolNumber: "000000",
+        driverName: "Nome",
+        board: "Placa",
+        category: "Seguradora",
+        deliveryDate: "dd/mm/aaaa",
+        answerDate: "dd/mm/aaaa",
+        show: ""
+      },
+      {
+        date: "dd/mm/aaaa",
+        protocolNumber: "000000",
+        driverName: "Nome",
+        board: "Placa",
+        category: "Seguradora",
+        deliveryDate: "dd/mm/aaaa",
+        answerDate: "dd/mm/aaaa",
+        show: ""
+      },
+      {
+        date: "dd/mm/aaaa",
+        protocolNumber: "000000",
+        driverName: "Nome",
+        board: "Placa",
+        category: "Seguradora",
+        deliveryDate: "dd/mm/aaaa",
+        answerDate: "dd/mm/aaaa",
+        show: ""
+      },
+      {
+        date: "dd/mm/aaaa",
+        protocolNumber: "000000",
+        driverName: "Nome",
+        board: "Placa",
+        category: "Seguradora",
+        deliveryDate: "dd/mm/aaaa",
+        answerDate: "dd/mm/aaaa",
+        show: ""
+      },
 
     ]
   }
@@ -102,7 +142,50 @@ export class LaudosComponent implements OnInit {
         status: "Aprovado",
         show: ""
       },
-
+      {
+        date: "dd/mm/aaaa",
+        protocolNumber: "000000",
+        driverName: "Nome",
+        board: "Placa",
+        category: "Seguradora",
+        deliveryDate: "dd/mm/aaaa",
+        answerDate: "dd/mm/aaaa",
+        status: "Aprovado",
+        show: ""
+      },
+      {
+        date: "dd/mm/aaaa",
+        protocolNumber: "000000",
+        driverName: "Nome",
+        board: "Placa",
+        category: "Seguradora",
+        deliveryDate: "dd/mm/aaaa",
+        answerDate: "dd/mm/aaaa",
+        status: "Aprovado",
+        show: ""
+      },
+      {
+        date: "dd/mm/aaaa",
+        protocolNumber: "000000",
+        driverName: "Nome",
+        board: "Placa",
+        category: "Seguradora",
+        deliveryDate: "dd/mm/aaaa",
+        answerDate: "dd/mm/aaaa",
+        status: "Aprovado",
+        show: ""
+      },
+      {
+        date: "dd/mm/aaaa",
+        protocolNumber: "000000",
+        driverName: "Nome",
+        board: "Placa",
+        category: "Seguradora",
+        deliveryDate: "dd/mm/aaaa",
+        answerDate: "dd/mm/aaaa",
+        status: "Aprovado",
+        show: ""
+      },
     ]
   }
 
