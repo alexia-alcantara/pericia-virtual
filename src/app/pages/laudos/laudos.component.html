@@ -1,14 +1,12 @@
 <p-card>
     <p-panel header="Laudos">
         <ng-template pTemplate="icons">
-            <button pButton pRipple type="button" label="Avaliar" name="optTipoTabela" value="0"
-                [class.active]="selectedLaudo==='avaliar'" (click)="typeLaudo('avaliar')"
-                class="p-button-outlined p-button-selecione"></button>
+            <button pButton pRipple type="button" label="Avaliar" [class.active]="selectedLaudo==='avaliar'"
+                (click)="typeLaudo('avaliar')" class="p-button-outlined p-button-selecione"></button>
 
 
-            <button pButton pRipple type="button" label="Concluídos" name="optTipoTabela" value="1"
-                [class.active]="selectedLaudo==='concluidos'" (click)="typeLaudo('concluidos')"
-                class="p-button-outlined p-button-selecione"></button>
+            <button pButton pRipple type="button" label="Concluídos" [class.active]="selectedLaudo==='concluidos'"
+                (click)="typeLaudo('concluidos')" class="p-button-outlined p-button-selecione"></button>
 
         </ng-template>
 
