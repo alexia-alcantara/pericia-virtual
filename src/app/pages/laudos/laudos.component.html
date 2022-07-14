@@ -1,13 +1,14 @@
 <p-card>
     <p-panel header="Laudos">
         <ng-template pTemplate="icons">
-            <!-- <p-selectButton [options]="stateOptions" [(ngModel)]="value1" optionLabel="label" optionValue="value">
-            </p-selectButton> -->
-            <button (click)="div1Function()" [ngClass]="{'active': div==='div1'}" pButton pRipple type="button"
-                label="Avaliar" class="p-button-raised p-button-avaliar"></button>
+            <button pButton pRipple type="button" label="Avaliar" name="optTipoTabela" value="0"
+                [class.active]="selectedLaudo==='avaliar'" (click)="typeLaudo('avaliar')"
+                class="p-button-outlined p-button-selecione"></button>
 
-            <button (click)="div2Function()" [ngClass]="{'active': div==='div2'}" pButton pRipple type="button"
-                label="Concluído" class="p-button-outlined p-button-concluido"></button>
+
+            <button pButton pRipple type="button" label="Concluídos" name="optTipoTabela" value="1"
+                [class.active]="selectedLaudo==='concluidos'" (click)="typeLaudo('concluidos')"
+                class="p-button-outlined p-button-selecione"></button>
 
         </ng-template>
 
@@ -30,7 +31,7 @@
     </div>
 
 
-    <div *ngIf="div1">
+    <div *ngIf="selectedLaudo == 'avaliar'">
         <p-table [value]="listaLaudos" [paginator]="true" [rows]="10" responsiveLayout="scroll">
             <ng-template pTemplate="header">
                 <tr>
@@ -60,7 +61,7 @@
     </div>
 
     <!--Tabela de Concluídos -->
-    <div *ngIf="div2">
+    <div *ngIf="selectedLaudo == 'concluidos'">
         <p-table [value]="laudosConcluidos" [paginator]="true" [rows]="10" responsiveLayout="scroll">
             <ng-template pTemplate="header">
                 <tr>

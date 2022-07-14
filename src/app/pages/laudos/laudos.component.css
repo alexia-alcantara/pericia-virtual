@@ -3,18 +3,36 @@
     padding: 0.3rem 1.3rem;
 }
 
-/* .active {
-    background: red !important;
-    color: #ffffff !important;
-} */
-
-.active {
-    background: #2196F3 !important;
-    color: #ffffff !important;
-    width: 120px;
+:host ::ng-deep .p-button-selecione {
     height: 42px;
-    padding: 0 2px 0 20px;
-    border-radius: 6px 0px 0px 8px;
+    width: 9rem;
+    font: normal normal bold 15px/39px Segoe UI;
+}
+
+:host ::ng-deep .p-button-selecione-concluido {
+    height: 42px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+:host ::ng-deep .p-button-selecione.active {
+    background-color: #2196F3;
+    color: #fff;
+    width: 9rem;
+}
+
+:host ::ng-deep .p-button-selecione:enabled:hover {
+    background-color: #fff;
+    color: #707070;
+    width: 9rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: #DADEE3;
+}
+
+:host ::ng-deep .p-button-selecione .p-button-label {
+    font: normal normal bold 15px/39px Segoe UI;
 }
 
 :host ::ng-deep .p-panel .p-panel-icons-end {

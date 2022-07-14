@@ -12,38 +12,21 @@ export class LaudosComponent implements OnInit {
   value1: string = "off";
   value3: string;
 
-  div: any = 'div1'
-  div1: any;
-  div2: any;
-
   listaLaudos: AvaliarLaudo[];
   colunas: any[];
 
   laudosConcluidos: LaudoConcluido[];
   colunas2: any[];
 
+  selectedLaudo = 'avaliar';
 
-  onClick(check: number) {
-    if (check == 0) {
-      this.div = 'div1'
-    } else if (check == 1) {
-      this.div = 'div2'
-    }
+  typeLaudo(laudo: string) {
+    this.selectedLaudo = laudo;
   }
 
-  div1Function() {
-    this.div1 = true;
-    this.div2 = false;
-  }
 
-  div2Function() {
-    this.div2 = true;
-    this.div1 = false;
-  }
 
-  constructor() {
-    this.stateOptions = [{ label: 'Off', value: 'off' }, { label: 'On', value: 'on' }];
-  }
+  constructor() { }
 
   ngOnInit(): void {
     this.setColuns();
