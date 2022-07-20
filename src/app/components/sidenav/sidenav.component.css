@@ -74,7 +74,9 @@ ul ul a {
     background: #6d7fcc;
 }
 
-@media (min-width: 320px) and (max-width: 576px) {
+/* Responsive */
+
+@media (max-width: 600px) {
     .wrapper {
         display: block;
     }
@@ -90,7 +92,7 @@ ul ul a {
     }
 
     #sidebar .sidebar-header {
-        background: var(--primary-color);
+        background: #18181C;
         padding: 5px;
     }
 }

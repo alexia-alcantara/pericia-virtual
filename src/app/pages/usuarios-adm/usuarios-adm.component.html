@@ -34,39 +34,36 @@
 
     <!-- Modal novo usuário -->
     <p-dialog styleClass="modalUsuário" header="Novo Usuário" [(visible)]="displayModal" [modal]="true"
-        [style]="{'width': '44vw', 'height': '35vw'}" [draggable]="false" [resizable]="false">
-        <div class="grid">
-            <div class=" md:col-12 lg:col-12">
-                <div class="field">
-                    <div class="grid">
-                        <div class="md:col-12 lg:col-12">
-                            <label for="nomeUser">Nome do usuário</label>
-                            <input id="nomeUser" type="text" pInputText placeholder="Digite">
-                        </div>
+        [draggable]="false" [resizable]="false">
+        <div class=" md:col-12 lg:col-12">
+            <div class="field">
+                <div class="grid p-2">
+                    <div class="md:col-12 lg:col-12">
+                        <label for="nomeUser">Nome do usuário</label>
+                        <input id="nomeUser" type="text" pInputText placeholder="Digite">
+                    </div>
 
-                        <div class="md:col-12 lg:col-12">
-                            <label for="email">Email</label>
-                            <input id="email" type="text" pInputText placeholder="Digite">
-                        </div>
+                    <div class="md:col-12 lg:col-12">
+                        <label for="email">Email</label>
+                        <input id="email" type="text" pInputText placeholder="Digite">
+                    </div>
 
-                        <div class="md:col-12 lg:col-12">
-                            <label for="password">Senha</label>
-                            <input id="password" type="password" pInputText placeholder="Digite">
-                            <span class="icon-password" (click)="showHidePassword()">
-                                <i [ngClass]="showpassword ? 'pi pi-eye' : 'pi pi-eye-slash' "
-                                    class="pi pi-eye-slash"></i>
-                            </span>
-                        </div>
+                    <div class="md:col-12 lg:col-12">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" pInputText placeholder="Digite">
+                        <span class="icon-password" (click)="showHidePassword()">
+                            <i [ngClass]="showpassword ? 'pi pi-eye' : 'pi pi-eye-slash' " class="pi pi-eye-slash"></i>
+                        </span>
+                    </div>
 
-                        <div class="md:col-12 lg:col-12">
-                            <label for="passwordConfirm">Confirmar Senha</label>
-                            <input id="passwordConfirm" type="password" pInputText placeholder="Digite">
+                    <div class="md:col-12 lg:col-12">
+                        <label for="passwordConfirm">Confirmar Senha</label>
+                        <input id="passwordConfirm" type="password" pInputText placeholder="Digite">
 
-                            <span class="icon-passwordConfirm" (click)="showHidePassword2()">
-                                <i [ngClass]="showpasswordConfirm ? 'pi pi-eye' : 'pi pi-eye-slash' "
-                                    class="pi pi-eye-slash"></i>
-                            </span>
-                        </div>
+                        <span class="icon-passwordConfirm" (click)="showHidePassword2()">
+                            <i [ngClass]="showpasswordConfirm ? 'pi pi-eye' : 'pi pi-eye-slash' "
+                                class="pi pi-eye-slash"></i>
+                        </span>
                     </div>
                 </div>
             </div>

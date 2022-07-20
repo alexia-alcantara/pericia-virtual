@@ -46,6 +46,11 @@ label {
     color: #69707A;
 }
 
+:host ::ng-deep .modalUsuário {
+    width: 44vw;
+    height: 35vw;
+}
+
 :host ::ng-deep .modalUsuário .p-dialog-header {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -60,6 +65,7 @@ label {
 
 :host ::ng-deep .p-dialog .p-dialog-content {
     overflow-y: hidden;
+    padding: 0 0.5rem 2rem 0.5rem;
 }
 
 :host ::ng-deep .modalUsuário .p-dialog-footer {
@@ -106,14 +112,14 @@ label {
 
 .icon-password {
     position: absolute;
-    left: 90%;
-    top: 17rem;
+    left: 33rem;
+    top: 18rem;
 }
 
 .icon-passwordConfirm {
     position: absolute;
-    left: 90%;
-    top: 22rem;
+    left: 33rem;
+    top: 23rem;
 }
 
 :host ::ng-deep .pi-eye-slash {
@@ -123,4 +129,37 @@ label {
 
 :host ::ng-deep .p-datatable .p-datatable-thead>tr>th {
     background: #fff;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    :host ::ng-deep .modalUsuário {
+        width: 22rem;
+        height: 100%;
+    }
+
+    :host ::ng-deep .modalUsuário .p-dialog-content {
+        padding: 1rem;
+    }
+
+    :host ::ng-deep .p-dialog-mask {
+        z-index: 99999 !important;
+    }
+
+    .grid {
+        display: block;
+    }
+
+
+    .icon-password {
+        top: 15.9rem;
+        left: 19rem;
+    }
+
+    .icon-passwordConfirm {
+        top: 19.9rem;
+        left: 19rem;
+    }
+
 }

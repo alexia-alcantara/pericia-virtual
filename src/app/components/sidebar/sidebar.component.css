@@ -120,11 +120,15 @@ label:hover {
 @media(max-width: 600px) {
     nav ul {
         width: 100%;
-        margin-top: 3.9rem;
+        margin-top: 0;
         height: 66rem;
     }
 
-    label[for="bt-menu"] {
+    .sticky-top {
+        top: 0;
+    }
+
+    #sidebar-wrapper {
         display: none;
     }
 }

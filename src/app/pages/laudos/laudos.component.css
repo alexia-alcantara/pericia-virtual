@@ -89,3 +89,42 @@
 :host ::ng-deep .p-datatable .p-datatable-tbody>tr>td.statusFinished {
     color: #409922;
 }
+
+
+/* Responsive */
+@media(max-width: 600px) {
+    :host ::ng-deep .p-panel .p-panel-header {
+        display: block;
+        height: 100%;
+        gap: 0;
+        padding: 5px;
+    }
+
+    :host ::ng-deep .p-panel .p-panel-icons-end {
+        display: flex;
+    }
+
+    :host ::ng-deep .p-button-selecione {
+        width: 100%;
+    }
+
+    :host ::ng-deep .p-button-selecione .p-button-label {
+        font: normal normal bold 13px/15px Segoe UI;
+    }
+
+    :host ::ng-deep .p-button-selecione.active {
+        width: 100%;
+    }
+
+    .campo-pesquisa {
+        display: block;
+    }
+
+    :host ::ng-deep .p-input-icon-left>.p-inputtext {
+        width: 100%;
+    }
+
+    :host ::ng-deep .p-button-export {
+        margin-top: 0.5rem;
+    }
+}

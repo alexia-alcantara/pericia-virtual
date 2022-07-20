@@ -3,9 +3,40 @@
         <img src="assets/images/logo_menor.svg" alt="logo-topo" class="logo-topo">
     </div>
     <div class="container-fluid">
-        <button class="btn btn-primary" (click)="clickEvent()">
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li routerLink="/laudos" class="nav-item mx-0 mx-lg-1">
+                    <span class="icon">
+                        <img src="assets/images/ic_menu_laudos.svg" class="svg" routerLinkActive="active">
+                    </span>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded">
+                        Laudos</a>
+                </li>
+
+                <li routerLink="/usuarios-administrativos" class="nav-item mx-0 mx-lg-1">
+                    <span class="icon">
+                        <img src="assets/images/ic_menu_usuarios.svg" class="svg" routerLinkActive="active">
+                    </span>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded">Usuários Administrativos</a>
+                </li>
+
+                <li routerLink="/login" class="nav-item mx-0 mx-lg-1">
+                    <span class="icon">
+                        <img src="assets/images/ic_menu_sair.svg" class="svg">
+                    </span>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded">Sair</a>
+                </li>
+
+            </ul>
+        </div>
 
     </div>
 </nav>

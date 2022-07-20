@@ -2,6 +2,11 @@
     background: #18181C !important;
 }
 
+.bg-primary {
+    background-color: #fff !important;
+}
+
+
 .logo-topo {
     width: 3vw;
 }
@@ -44,6 +49,13 @@
     box-shadow: 0 8px 5px -10px;
 }
 
+.nav-link {
+    display: none;
+}
+
+.nav-item {
+    display: none;
+}
 
 :host ::ng-deep .p-avatar img {
     width: 3.3rem;
@@ -64,34 +76,52 @@
 
 @media(max-width: 600px) {
     .navbar {
-        flex-wrap: nowrap;
-        padding-bottom: 2.5rem;
+        flex-wrap: wrap;
+        z-index: 9999;
+    }
+
+    .navbar-toggler {
+        margin-top: -3rem;
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .svg {
+        width: 25px;
+    }
+
+    .svg.active {
+        cursor: pointer;
+        filter: invert(30%) sepia(9%) saturate(3830%) hue-rotate(29deg) brightness(93%) contrast(81%);
     }
 
     .navbar-expand-lg .navbar-expand-lg {
         justify-content: left;
     }
 
-    .collapse:not(.show) {
-        display: inherit;
-    }
 
     .logo-topo {
         width: 60%;
     }
 
-    .btn-primary {
-        display: none;
-    }
-
     .navbar>.container,
     .navbar>.container-fluid,
     .navbar>.container-sm {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 
-    .navbar-toggler {
-        display: none;
+    .nav-link {
+        display: block;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+
     }
 
     #page-content-wrapper {
@@ -121,15 +151,5 @@
 
     .hide {
         margin-left: -15rem !important;
-    }
-}
-
-@media (max-width: 767px) {
-    .show {
-        margin-left: -15rem !important;
-    }
-
-    .hide {
-        margin-left: -0 !important;
     }
 }

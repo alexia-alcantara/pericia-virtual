@@ -131,3 +131,17 @@ body {
     font: normal normal 600 23px/40px Segoe UI;
     color: #69707A;
 }
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+        width: 2rem;
+        height: 100%;
+    }
+
+    .p-paginator .p-paginator-first {
+        min-width: 2rem;
+        height: 3rem;
+    }
+}

@@ -1,3 +1,7 @@
+.box {
+    padding-top: 1rem;
+}
+
 :host ::ng-deep .box-login {
     width: 100%;
     box-shadow: none;
@@ -58,4 +62,24 @@ p {
     font: normal normal bold 18px/45px Lato;
     text-align: center;
     color: #ED1C27;
+}
+
+
+/* Responsive */
+@media(max-width: 600px) {
+    .box {
+        padding-top: 4rem;
+    }
+
+    .btn-acess {
+        display: block;
+    }
+
+    :host ::ng-deep .p-button-acess {
+        margin-bottom: 1rem;
+    }
+
+    .logo-pericia {
+        width: 12rem;
+    }
 }
