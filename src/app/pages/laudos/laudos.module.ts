@@ -1,3 +1,4 @@
+import { CustomerService } from './../../components/models/customerservice';
 import { RouterModule } from '@angular/router';
 import { LaudosComponent } from './laudos.component';
 import { NgModule } from '@angular/core';
@@ -20,7 +21,10 @@ import { TableModule } from 'primeng/table';
 import { PaginatorModule } from 'primeng/paginator';
 import { LaudoRejeitadoComponent } from './laudo-rejeitado/laudo-rejeitado.component';
 
-
+import { MultiSelectModule } from 'primeng/multiselect';
+import { SliderModule } from 'primeng/slider';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     LaudosComponent,
@@ -35,13 +39,18 @@ import { LaudoRejeitadoComponent } from './laudo-rejeitado/laudo-rejeitado.compo
     InputTextModule,
     InputTextareaModule,
     FormsModule,
+    MultiSelectModule,
+    SliderModule,
+    ProgressBarModule,
     ReactiveFormsModule,
     RadioButtonModule,
     SelectButtonModule,
     PanelModule,
     PaginatorModule,
+    HttpClientModule,
     TableModule,
     RouterModule.forChild(LaudosRoutes)
-  ]
+  ],
+  providers: [CustomerService],
 })
 export class LaudosModule { }
